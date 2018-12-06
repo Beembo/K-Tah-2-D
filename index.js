@@ -31,7 +31,7 @@ function setup()  {
 function setup() {
   createCanvas (600, 600);
   noStroke();
-  let audio = new Audio('https://raw.githubusercontent.com/Beembo/K-Tah-2-D/master/17%20Abandoned..mp3');
+  let audio = new Audio('https://raw.githubusercontent.com/Beembo/K-Tah-2-D/Test1/17%20Abandoned..mp3');
   audio.play();
 }
 

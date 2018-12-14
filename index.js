@@ -1,6 +1,3 @@
-const ctx = canvas.getContext("2d");
-const healthProgress = document.querySelector("progress");
-
 class Character {
   constructor(x, y, color, radius, speed) {
     Object.assign(this, { x, y, radius, color, speed });
@@ -31,7 +28,6 @@ function setup() {
   const canvas = createCanvas(600, 600);
   canvas.parent(document.querySelector("#game"));
   noStroke();
-  backgroundMusic.play();
 }
 
 function draw() {
@@ -80,3 +76,4 @@ function mouseClicked() {
   }
 }
 
+backgroundMusic.play();

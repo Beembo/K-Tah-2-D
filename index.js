@@ -40,7 +40,7 @@ function setup() {
  function draw() {
   background(254);
   image(img, 0, 0);
-  tint(255, 127);  
+  tint(255, 200);  
   player.draw();
   player.move({ x: mouseX, y: mouseY }, 0.05);
   enemies.forEach(enemy => enemy.draw());

@@ -15,10 +15,10 @@ class Character {
 
 const player = new Character(30, 30, "blue", 10, 0.05);
 const enemies = [
-  new Character(300, 0, "rgba(100, 0, 0, 0.2)", 15, 0.01),
-  new Character(300, 300, "rgba(120, 0, 250, 0.2)", 17, 0.005),
-  new Character(0, 300, "rgba(100, 125, 110, 0.2)", 30, 0.03),
-  new Character(20, 400, "rgba(40, 35, 0, 0.4)", 12, 0.02)
+  new Character(300, 0, "rgba(100, 0, 0, 1)", 15, 0.01),
+  new Character(300, 300, "rgba(120, 0, 250, 1)", 17, 0.005),
+  new Character(0, 300, "rgba(100, 125, 110, 1)", 30, 0.03),
+  new Character(20, 400, "rgba(40, 35, 0, 1)", 12, 0.02)
 ];
 
 let scarecrow;

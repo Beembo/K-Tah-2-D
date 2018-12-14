@@ -1,3 +1,6 @@
+const ctx = canvas.getContext("2d");
+const healthProgress = document.querySelector("progress");
+
 class Character {
   constructor(x, y, color, radius, speed) {
     Object.assign(this, { x, y, radius, color, speed });

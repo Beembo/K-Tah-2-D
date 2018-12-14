@@ -15,6 +15,7 @@ Features:
   - Enemy skeleton sprites (follow the player at randomly generated speeds)
   - Health Meter (Max value at 100% which decreases when the player touches the enemy until 0%)
   - Decoy Models (dummy models which distract enemy characters)
+  -SOUNDS (Yes they work)
 
 Controls:
   - Movement: Player sprite moves towards the cursor

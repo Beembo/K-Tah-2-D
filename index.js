@@ -32,7 +32,7 @@ function setup() {
 }
 
 function draw() {
-  background("pink");
+  background(backgroundImage);
   player.draw();
   player.move({ x: mouseX, y: mouseY }, 0.05);
   enemies.forEach(enemy => enemy.draw());

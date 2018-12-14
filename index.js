@@ -15,7 +15,7 @@ class Character {
 
 const player = new Character(30, 30, "blue", 10, 0.05);
 const enemies = [
-  new Character(300, 0, "rgba(200, 0, 0, 0.5)", 15, 0.00000000000000000000000001),
+  new Character(300, 0, "rgba(200, 0, 0, 0.5)", 15, 0.01),
   new Character(300, 300, "rgba(240, 0, 250, 0.5)", 17, 0.005),
   new Character(0, 300, "rgba(200, 250, 220, 0.5)", 30, 0.03),
   new Character(20, 400, "rgba(80,70,0,.7)", 12, 0.02)
@@ -37,7 +37,7 @@ function drawBackground(img) {
 }
 
 function draw() {
-  background("rgba(10, 10, 10, 0.1)");
+  background("rgba(10, 10, 10, 0.00000000000000000000000001)");
   player.draw();
   player.move({ x: mouseX, y: mouseY }, 0.05);
   enemies.forEach(enemy => enemy.draw());

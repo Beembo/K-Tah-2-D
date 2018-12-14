@@ -37,7 +37,7 @@ function drawBackground(img) {
 }
 
 function draw() {
-  background(0, 0, 0, 0);
+  background(255, 255, 255, 0);
   player.draw();
   player.move({ x: mouseX, y: mouseY }, 0.05);
   enemies.forEach(enemy => enemy.draw());

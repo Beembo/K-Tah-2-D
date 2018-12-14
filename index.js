@@ -32,12 +32,10 @@ function setup() {
   backgroundMusic.play();
 }
 
-function drawBackground(img) {
-  image(img, 0, 0);
 }
 
 function draw() {
-  background("rgba(50, 50, 50, 0.00000000001)");
+  image(img, 0, 0);
   player.draw();
   player.move({ x: mouseX, y: mouseY }, 0.05);
   enemies.forEach(enemy => enemy.draw());

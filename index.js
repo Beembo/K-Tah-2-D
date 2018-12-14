@@ -22,22 +22,24 @@ const enemies = [
 ];
 
 let scarecrow;
+let img;
 
+function preload()
+{
+  // load image
+  img = loadImage('https://i.ibb.co/qMhSHrL/chaser-background.jpg');
+}
 
 function setup() {
   const canvas = createCanvas(600, 600);
   canvas.parent(document.querySelector("#game"));
   noStroke();
-  loadImage('https://i.ibb.co/qMhSHrL/chaser-background.jpg', drawBackground);
   backgroundMusic.play();
 }
 
-function drawBackground(img) {
-  image(img, 0, 0);
-}
-
  function draw() {
-  background(drawBackground);
+  background(255);
+  image(img, 0, 0); 
   player.draw();
   player.move({ x: mouseX, y: mouseY }, 0.05);
   enemies.forEach(enemy => enemy.draw());

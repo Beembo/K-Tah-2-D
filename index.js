@@ -28,6 +28,7 @@ function setup() {
   const canvas = createCanvas(600, 600);
   canvas.parent(document.querySelector("#game"));
   noStroke();
+  backgroundMusic.play();
 }
 
 function draw() {
@@ -75,5 +76,3 @@ function mouseClicked() {
     scarecrow.ttl = frameRate() * 5;
   }
 }
-
-backgroundMusic.play();

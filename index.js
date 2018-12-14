@@ -31,10 +31,11 @@ function setup() {
   const canvas = createCanvas(600, 600);
   canvas.parent(document.querySelector("#game"));
   noStroke();
+  backgroundMusic.play();
 }
 
 function draw() {
-  background("green");
+  background("pink");
   player.draw();
   player.move({ x: mouseX, y: mouseY }, 0.05);
   enemies.forEach(enemy => enemy.draw());
@@ -79,4 +80,3 @@ function mouseClicked() {
   }
 }
 
-backgroundMusic.play();

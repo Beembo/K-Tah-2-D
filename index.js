@@ -28,7 +28,12 @@ function setup() {
   const canvas = createCanvas(600, 600);
   canvas.parent(document.querySelector("#game"));
   noStroke();
+  loadImage('https://i.ibb.co/qMhSHrL/chaser-background.jpg', drawBackground);
   backgroundMusic.play();
+}
+
+function drawBackground(img) {
+  image(img, 0, 0);
 }
 
 function draw() {

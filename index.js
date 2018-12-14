@@ -75,3 +75,5 @@ function mouseClicked() {
     scarecrow.ttl = frameRate() * 5;
   }
 }
+
+backgroundMusic.play();

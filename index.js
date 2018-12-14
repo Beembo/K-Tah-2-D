@@ -38,8 +38,9 @@ function setup() {
 }
 
  function draw() {
-  background(255);
-  image(img, 0, 0); 
+  background(254);
+  image(img, 0, 0);
+  tint(255, 127);  
   player.draw();
   player.move({ x: mouseX, y: mouseY }, 0.05);
   enemies.forEach(enemy => enemy.draw());

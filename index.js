@@ -13,6 +13,8 @@ class Character {
   }
 }
 
+let lifeBar = document.querySelector("#life");
+
 const player = new Character(30, 30, "blue", 10, 0.05);
 const enemies = [
   new Character(300, 0, "rgba(100, 0, 0, 1)", 15, 0.01),
@@ -24,10 +26,9 @@ const enemies = [
 let scarecrow;
 let img;
 
-function preload()
-{
+function preload() {
   // load image
-  img = loadImage('https://i.ibb.co/qMhSHrL/chaser-background.jpg');
+  img = loadImage("https://i.ibb.co/qMhSHrL/chaser-background.jpg");
 }
 
 function setup() {
@@ -37,10 +38,10 @@ function setup() {
   backgroundMusic.play();
 }
 
- function draw() {
+function draw() {
   background(254);
   image(img, 0, 0);
-  tint(255, 220);  
+  tint(255, 220);
   player.draw();
   player.move({ x: mouseX, y: mouseY }, 0.05);
   enemies.forEach(enemy => enemy.draw());
@@ -53,6 +54,11 @@ function setup() {
     }
   }
   adjustEnemies();
+  if (lifeBar.value <= 0) {
+    // TODO: Message game over
+    noLoop();
+    gameOver();
+  }
 }
 
 function adjustEnemies() {
@@ -69,6 +75,9 @@ function pushOff(c1, c2) {
   const distance = Math.hypot(dx, dy);
   let overlap = c1.radius + c2.radius - distance;
   if (overlap > 0) {
+    if (c1 === player) {
+      lifeBar.value -= 1;
+    }
     const adjustX = overlap / 2 * (dx / distance);
     const adjustY = overlap / 2 * (dy / distance);
     c1.x -= adjustX;
@@ -83,4 +92,20 @@ function mouseClicked() {
     scarecrow = new Character(player.x, player.y, "white", 10, 0);
     scarecrow.ttl = frameRate() * 5;
   }
+}
+
+function gameOver() {
+  background("rgba(0,255,0,0.1)");
+  textAlign(CENTER);
+  textFont("Chalkduster");
+  textSize(40);
+  fill("white");
+  text("YOU'VE LOST MY FRIEND!", width / 2, height / 2);
+  textFont("Chalkduster");
+  textSize(20);
+  text("Perhaps, I overestimated you...", 300, 250);
+  backgroundMusic.pause();
+  backgroundMusic.currentTime = 0;
+  video.play();
+  image(video, 0, 0);
 }

@@ -29,3 +29,5 @@ Controls:
     - Deploys a decoy/STAND
   - "Rewind" Button:
     - Resets the game environment
+    
+  _Note: For some hidden reason, the game does not work properly in Safari, at least the on my older model Mac. Expect the fonts to be defaulted and for there to be no sound._

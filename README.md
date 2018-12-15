@@ -1,6 +1,8 @@
 # Jojo's Bizarre Adventure
 
-I.E. K'Tah the Second (Disclaimer: not at all affliated with the creators of the long-running series "Jojo's Bizarre Adventure" but merely making a tribute game to it)
+IE K'Tah the Second 
+
+_(Disclaimer: not at all affliated with the creators of the long-running series "Jojo's Bizarre Adventure" but merely making a tribute game to it)_
 
 Links:
 

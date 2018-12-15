@@ -14,7 +14,7 @@ A Small Game for CMSI 185.
 
 This is a 2-D game based _somewhat_ off of the LMU [K'Tah](https://github.com/lmucs/ktah) senior project. I worked alone on this project albeit taking much inspiration from [_Skeleton Attack!_](https://mlouis2.github.io/chaser/) by Maddie Louis in terms of organizing files and looking up online resources. 
 
-You are Jotaro, the _dashing_, circular, and blue rogue who must avoid the _dashing_ likewise circular minions of DIO. You will be able to deploy your STAND to hold off the minions for five seconds only. Do not let the enemies take you down or it is GAME OVER. Stay alive as long as you can. You may be able to reset the environment, but these enemies will never be the same each time. Be cautious, as even though you may immediately redeploy your STAND after 5 seconds, there is one particularily large, but quick foe always closing in on you...
+You are Jotaro, the _dashing_, circular, and blue rogue who must avoid the likewise _dashing_, circular, and colorful minions of DIO. You will be able to deploy your STAND to hold off the minions for five seconds only. Do not let the enemies take you down or it is GAME OVER. Stay alive as long as you can. You may be able to reset the environment, but these enemies will never be the same each time. Be cautious, as even though you may immediately redeploy your STAND after 5 seconds, there is one particularily large, but quick foe always closing in on you...
 
 Features:
   - Player Ellipse (Controlled by mouse movement)

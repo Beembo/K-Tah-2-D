@@ -15,11 +15,11 @@ This is a 2-D game based _somewhat_ off of the LMU [K'Tah](https://github.com/lm
 You are Jotaro, the dashing blue player who must avoid the minions of DIO. You will be able to deploy your STAND to hold off the minions for five seconds only. Do not let the enemies take you down or it is GAME OVER. Stay alive as long as you can.
 
 Features:
-  - Player Ellipse (controlled by mouse movement)
-  - Randomly-Colored Enemy Ellipses (follows the player at different speeds)
+  - Player Ellipse (Controlled by mouse movement)
+  - Randomly-Colored Enemy Ellipses (Follows the player at different speeds)
   - Health Meter (Max value at 100% which decreases when the player touches the enemy until 0%)
-  - Decoy Model (dummy model which distract enemies for 5 seconds
-  - SOUNDS (Yes they work)
+  - Decoy Model (Dummy model which distract enemies for 5 seconds
+  - Background Sounds (Gameplay music and Game-Over sound effect)
 
 Controls:
   - Movement: Player sprite moves towards the cursor

@@ -15,12 +15,48 @@ class Character {
 
 let lifeBar = document.querySelector("#life");
 
+function randomSpeed() {
+  let speed = Math.random() * 0.04 + 0.005;
+}
+
+function randomColor() {
+  const red = Math.floor(Math.random() * 256);
+  const green = Math.floor(Math.random() * 256);
+  const blue = Math.floor(Math.random() * 256);
+  return [red, green, blue];
+}
+
 const player = new Character(30, 30, "blue", 10, 0.05);
 const enemies = [
-  new Character(300, 0, "rgba(100, 0, 0, 1)", 15, 0.01),
-  new Character(300, 300, "rgba(120, 0, 250, 1)", 17, 0.005),
-  new Character(0, 300, "rgba(100, 125, 110, 1)", 30, 0.03),
-  new Character(20, 400, "rgba(40, 35, 0, 1)", 12, 0.02)
+  new Character(
+    Math.random(),
+    Math.random(),
+    randomColor(),
+    15,
+    Math.random() * 0.03
+  ),
+  new Character(
+    Math.random(),
+    Math.random(),
+    randomColor(),
+    17,
+    Math.random() * 0.04
+  ),
+  new Character(
+    Math.random(),
+    Math.random(),
+    randomColor(),
+    30,
+    Math.random() * 0.06
+  ),
+  new Character(
+    Math.random(),
+    Math.random(),
+    randomColor(),
+    12,
+    Math.random() * 0.02
+  ),
+  new Character(Math.random(), Math.random(), "gold", 50, Math.random() * 0.1)
 ];
 
 let scarecrow;
@@ -35,6 +71,7 @@ function setup() {
   const canvas = createCanvas(600, 600);
   canvas.parent(document.querySelector("#game"));
   noStroke();
+
   backgroundMusic.play();
 }
 
@@ -57,7 +94,7 @@ function draw() {
   if (lifeBar.value <= 0) {
     // TODO: Message game over
     noLoop();
-    gameOver();
+    gameOverSequence();
   }
 }
 
@@ -76,7 +113,7 @@ function pushOff(c1, c2) {
   let overlap = c1.radius + c2.radius - distance;
   if (overlap > 0) {
     if (c1 === player) {
-      lifeBar.value -= 1;
+      lifeBar.value -= 0.5;
     }
     const adjustX = overlap / 2 * (dx / distance);
     const adjustY = overlap / 2 * (dy / distance);
@@ -94,8 +131,8 @@ function mouseClicked() {
   }
 }
 
-function gameOver() {
-  background("rgba(0,255,0,0.1)");
+function gameOverSequence() {
+  background("rgba(200,200,0,0.1)");
   textAlign(CENTER);
   textFont("Chalkduster");
   textSize(40);
@@ -107,5 +144,4 @@ function gameOver() {
   backgroundMusic.pause();
   backgroundMusic.currentTime = 0;
   video.play();
-  image(video, 0, 0);
 }

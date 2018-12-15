@@ -30,4 +30,4 @@ Controls:
   - "Rewind" Button:
     - Resets the game environment
     
-  _Note: For some hidden reason, the game does not work properly in Safari, at least not on my older 2011 Macbook. Possibly expect the fonts to be defaulted and for there to be no sound._
+  _Note: For some hidden reason, the game does not work properly in Safari, at least not on my older 2011 Macbook. Possibly expect the fonts to be defaulted and for there to be no sound. Chrome and Firefox work fine though. I have not tested it on Opera or Edge nor Internet Explorer yet but it should work fine in those browsers._

@@ -1,24 +1,29 @@
-# K-Tah-2-D
+# Jojo's Bizarre Adventure
 
-(I.E. Jojo's Bizarre Chase)
+I.E. K'Tah the Second (Disclaimer: not at all claiming the title series of "Jojo's Bizarre Adventure")
+
+Links:
 
 https://codepen.io/dave-zhang/pen/JeaZQK
 
 https://beembo.github.io/K-Tah-2-D/
 
-Game for CMSI 185.
+A Small Game for CMSI 185.
 
-It is a class 2-D version based _somewhat_ on the LMU [K'Tah](https://github.com/lmucs/ktah) project.
+It is a class 2-D version based _somewhat_ on the LMU [K'Tah](https://github.com/lmucs/ktah) project. I alone worked on this albeit taking much inspiration from _Skeleton Attack!_ by Maddie Louis in terms of organizing files and online m resources. 
+
+You are Jotaro, the dashing blue player who must avoid the minions of DIO. You will be able to deploy your STAND to hold off the minions for five seconds only. Do not let the enemies take you down or it is GAME OVER. Stay alive as long as you can.
 
 Features:
-  - Player sprite (controlled by mouse movement)
-  - Enemy skeleton sprites (follow the player at randomly generated speeds)
+  - Player Ellipse (controlled by mouse movement)
+  - Randomly-Colored Enemy Ellipses (follows the player at different speeds)
   - Health Meter (Max value at 100% which decreases when the player touches the enemy until 0%)
-  - Decoy Models (dummy models which distract enemy characters)
+  - Decoy Model (dummy model which distract enemies for 5 seconds
   - SOUNDS (Yes they work)
 
 Controls:
   - Movement: Player sprite moves towards the cursor
-  - Mouse click:
+  - Mouse Click:
     - Deploys a decoy
-    - Resets game after "Game Over"
+  - "Rewind" Button:
+    - Resets the game

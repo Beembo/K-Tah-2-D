@@ -24,8 +24,8 @@ Features:
   - Background Sounds (Gameplay music and Game-Over sound effect)
 
 Controls:
-  - Movement: Player sprite moves towards the cursor
+  - Movement: As mentioned above, player ellipse moves towards the cursor.
   - Mouse Click:
-    - Deploys a decoy
+    - Deploys a decoy/STAND
   - "Rewind" Button:
-    - Resets the game
+    - Resets the game environment
